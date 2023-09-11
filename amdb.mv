@@ -310,7 +310,8 @@ function saveVals(e1,e2,e3,e4,e5,e6) {
    <hr/>
    Recent improvements:<br>
    <code>
-   <b>2023-09-10:</b> Initial release. Callsign history still to be implemented
+   <b>2023-09-10:</b> Initial release. Callsign history still to be implemented<br/>
+   <b>2023-09-11:</b> Callsign history implemented using old CDBS files. Expect weirdness
    </code>
 <p>Comments/suggestions? <a href="mailto:mike@mesamike.org?subject=Mesa Mike's List of USA AM Band Radio Stations">email me</a>
    <hr>
