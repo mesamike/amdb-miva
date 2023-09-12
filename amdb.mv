@@ -402,6 +402,7 @@ function saveVals(e1,e2,e3,e4,e5,e6) {
       <th align="center" valign="bottom">PWR-D</th>
       <th align="center" valign="bottom">PWR-N</th>
       <th align="center" valign="bottom">PWR-C</th>
+      <th align="center" valign="bottom">MODE</th>
       <th align="center" valign="bottom">LATITUDE</th>
       <th align="center" valign="bottom">LONGITUDE</th>
       <mvif expr="{f_calc}">
@@ -436,6 +437,7 @@ function saveVals(e1,e2,e3,e4,e5,e6) {
       <td align="right"><mveval expr="{d.pwrd}"></td>
       <td align="right"><mveval expr="{d.pwrn}"></td>
       <td align="right"><mveval expr="{d.pwrc}"></td>
+      <td align="right"><mveval expr="{d.mode}"></td>
       <td align="right"><a href="{'http://maps.google.com/maps?q='$d.lat$',+'$d.lon$'+('$d.call$')'}" target="_blank"><mveval expr="{d.lat}"></a></td>
       <td align="right"><a href="{'http://maps.google.com/maps?q='$d.lat$',+'$d.lon$'+('$d.call$')'}" target="_blank"><mveval expr="{d.lon}"></a></td>
       <mvif expr="{f_calc}">
