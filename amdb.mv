@@ -99,6 +99,7 @@
                      pwrd       char(8),
                      pwrn       char(8),
                      pwrc       char(8),
+                     mode       char(5),
                      lat	number(8.4),
                      lon	number(9.4),
                      status     char(5), 
@@ -129,6 +130,7 @@
                         l.pwrd,
                         l.pwrn,
                         l.pwrc,
+                        l.mode,
                         l.lat,
                         l.lon,
                         l.status,
@@ -147,6 +149,7 @@
                <mvassign name="d.pwrd" value="{l.pwrd}">
                <mvassign name="d.pwrn" value="{l.pwrn}">
                <mvassign name="d.pwrc" value="{l.pwrc}">
+               <mvassign name="d.mode" value="{l.mode}">
                <mvassign name="d.state" value="{l.state}">
                <mvassign name="d.lat" value="{l.lat}">
                <mvassign name="d.lon" value="{l.lon}">
