@@ -309,7 +309,8 @@ function saveVals(e1,e2,e3,e4,e5,e6) {
    (also, see [<a href="dfac.mvc">list of deleted stations</a>])
    <hr/>
    <b>NOTE:</b> Welcome to the NEW Mesa Mike's list built using the FCC's newer LMS database files. <br>
-   The system is still in testing phase. Please report any weirdness you notice.
+   The system is still in testing phase. Please report any weirdness you notice.<br/>
+   If this list isn't working, [<a ref="http://mesamike.org/radio/cdbs/amdb-old.mvc">try the old version</a>] 
    <hr/>
    Recent improvements:<br>
    <code>
