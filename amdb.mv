@@ -308,9 +308,8 @@ function saveVals(e1,e2,e3,e4,e5,e6) {
    Critical Hours are sunrise till 2 hours after sunrise, and 2 hours before sunset till sunset<br>
    (also, see [<a href="dfac.mvc">list of deleted stations</a>])
    <hr/>
-   <b>NOTE:</b> Welcome to the NEW Mesa Mike's list built using the FCC's newer LMS database files. <br>
-   The system is still in testing phase. Please report any weirdness you notice.<br/>
-   If this list isn't working, [<a href="http://mesamike.org/radio/cdbs/amdb-old.mvc">try the old version</a>] 
+   <b>NOTE:</b> It appears the FCC is no longer publishing some of the database tables that this list relied upon. A new method of generating tis list will have to be devised using other data filespublished by the FCC.<br/>
+For now, this list is out of date. 
    <hr/>
    Recent improvements:<br>
    <code>

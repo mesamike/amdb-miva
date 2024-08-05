@@ -67,33 +67,15 @@
       <mvexit>
    <mvelse>
       <mvimport file="{dfac_dat}"
-                fields="l.city,
-                        l.state,
-                        l.eeoi,
-                        l.fac_addr1,
-                        l.fac_addr2,
+                fields="
                         l.callsign,
-                        l.channel,
-                        l.fac_city,
-                        l.fac_country,
+                        l.city,
+                        l.state,
+                        l.fac_id,
+                        l.fac_stat,
                         l.freq,
                         l.service,
-                        l.fac_state,
                         l.stat_date,
-                        l.fac_type,
-                        l.fac_id,
-                        l.lic_expr,
-                        l.fac_stat,
-                        l.zip1,
-                        l.zip2,
-                        l.sta_type,
-                        l.assoc_fac_id,
-                        l.callsign_date,
-                        l.tsid_ntsc,
-                        l.tsid_dtv,
-                        l.dig_stat,
-                        l.sat_tv,
-                        l.change_date,
                         l.callhist"
                 delimiter="|">
 
