@@ -309,7 +309,7 @@ function saveVals(e1,e2,e3,e4,e5,e6) {
    (also, see [<a href="dfac.mvc">list of deleted stations</a>])
    <hr/>
    <b>NOTE:</b> It appears the FCC is no longer publishing some of the database tables that this list relied upon. A new method of generating this list will have to be devised using other data files published by the FCC.<br/>
-For now, this list is out of date. 
+<font color="red">For now, this list is out of date.</font>
    <hr/>
    Recent improvements:<br>
    <code>
