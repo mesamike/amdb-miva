@@ -308,7 +308,7 @@ function saveVals(e1,e2,e3,e4,e5,e6) {
    Critical Hours are sunrise till 2 hours after sunrise, and 2 hours before sunset till sunset<br>
    (also, see [<a href="dfac.mvc">list of deleted stations</a>])
    <hr/>
-   <b>NOTE:</b> The list is now generated from the FCC's new LMS database file <br/>
+   <b>NOTE:</b> The list is now generated from the FCC's new LMS database files <br/>
 <font color="red">Please report any weirdness</font>
    <hr/>
    Recent improvements:<br>
