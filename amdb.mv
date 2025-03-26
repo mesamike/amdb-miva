@@ -306,7 +306,6 @@ function saveVals(e1,e2,e3,e4,e5,e6) {
    Views since last update: <mveval expr="{hitcount}"><br>
    <b>PWR-D</b>:Day Power, <b>PWR-N</b>:Night Power, <b>PWR-C</b>:Critical Hours Power<br>
    Critical Hours are sunrise till 2 hours after sunrise, and 2 hours before sunset till sunset<br>
-   (also, see [<a href="dfac.mvc">list of deleted stations</a>])
    <hr/>
    <b>NOTE:</b> The list is now generated from the FCC's new LMS database files <br/>
 <font color="red">Please report any weirdness</font>
