@@ -308,15 +308,12 @@ function saveVals(e1,e2,e3,e4,e5,e6) {
    Critical Hours are sunrise till 2 hours after sunrise, and 2 hours before sunset till sunset<br>
    (also, see [<a href="dfac.mvc">list of deleted stations</a>])
    <hr/>
-   <b>NOTE:</b> It appears the FCC is no longer publishing some of the database tables that this list relied upon. A new method of generating this list will have to be devised using other data files published by the FCC.<br/>
-<font color="red">For now, this list is out of date.</font>
+   <b>NOTE:</b> The list is now generated from the FCC's new LMS database file <br/>
+<font color="red">Please report any weirdness</font>
    <hr/>
    Recent improvements:<br>
    <code>
-   <b>2023-09-10:</b> Initial release. Callsign history still to be implemented<br/>
-   <b>2023-09-11:</b> Callsign history implemented using old CDBS files. Expect weirdness<br/>
-   <b>2023-09-12:</b> List now includes antenna mode designator<br/>
-   <b>2024-01-27:</b> Removed 9 kHz channels other than 567 and 801 from drop-down frequency selector
+   <b>2025-03-25:</b> Initial release. Callsign history still to be implemented<br/>
    </code>
 <p>Comments/suggestions? <a href="mailto:mike@mesamike.org?subject=Mesa Mike's AMDB List">email me</a>
    <hr>
