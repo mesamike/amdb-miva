@@ -205,7 +205,7 @@ Both</td></tr>
 <mvwhile expr="{not d.eof}">
 <mvif expr="{(d.status eq g.show) OR (g.show eq 'both')}">
    <tr>
-      <td><mveval expr="{d.date}"></td>
+      <td><mveval expr="{d.sdate}"></td>
       <td><mveval expr="{d.status}"></td>
       <td><a href="{'https://enterpriseefiling.fcc.gov/dataentry/public/tv/publicFacilityDetails.html?facilityId='$d.fac_id}" target="_blank" ><mveval expr="{d.fac_id}"></a></td>
       <td><mveval expr="{d.call}"></td>
