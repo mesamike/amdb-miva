@@ -68,15 +68,14 @@
    <mvelse>
       <mvimport file="{dfac_dat}"
                 fields="
-                        l.callsign,
-                        l.city,
-                        l.state,
-                        l.fac_id,
-                        l.fac_stat,
-                        l.freq,
-                        l.service,
                         l.stat_date,
-                        l.callhist"
+                        l.fac_stat,
+                        l.fac_id,
+                        l.callsign,
+                        l.freq,
+                        l.state,
+                        l.city"
+                        
                 delimiter="|">
 
                <mvwhile expr="{substring(l.callsign,1,1) eq 'D'}">
@@ -89,7 +88,6 @@
                <mvassign name="d.state" value="{l.state}">
                <mvassign name="d.status" value="{l.fac_stat}">
                <mvassign name="d.fac_id" value="{l.fac_id}">
-               <mvassign name="d.callhist" value="{l.callhist}">
                <mvif expr="{len(l.stat_date) gt 0}">
                   <mvassign name="d.statdate" value="{l.stat_date}">
                <mvelse>
