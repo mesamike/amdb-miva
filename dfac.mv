@@ -57,7 +57,7 @@
    <mvmakeindex name="dfac_db"
                 indexfile="{g.dfac_statdate_idx}"
                 flags="descending"
-                expr="{dfac_db.d.call_date}"> 
+                expr="{dfac_db.d.statdate}"> 
 
    <mvif expr="{not fexists(dfac_dat)}">
       <mveval expr="{'Data file '$dfac_dat$' missing.<br>'}">
@@ -95,7 +95,6 @@
                <mvassign name="d.sortdate" value="{substring(d.statdate, 7, 4) $ 
                                                    substring(d.statdate, 1, 2) $ 
                                                    substring(d.statdate, 4, 2)}">
-               <mvassign name = "d.callhist" value="{l.callhist}">
                <mvadd>
       </mvimport>
    </mvif>
