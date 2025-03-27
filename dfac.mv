@@ -30,17 +30,14 @@
 <mvif expr="{not fexists(dfac_dbf)}">
    <mvcreate name="dfac_db"
              database="{g.dfac_dbf}"
-             fields="call	char(10),
-                     freq       number(4),
-                     state      char(2),
-                     city       char(40),
+
+             fields="statdate   char(10),
                      status     char(5), 
                      fac_id     char(10),
-                     statdate   char(10),
-                     sortdate   char(10),
-                     licexpdate char(10),
-                     calldate   char(10),
-                     callhist   memo">
+                     call	char(10),
+                     freq       number(4),
+                     state      char(2),
+                     city       char(40) ">
    <mvmakeindex name="dfac_db"
                 indexfile="{g.dfac_facid_idx}"
                 flags="ascending"
