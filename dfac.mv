@@ -31,7 +31,7 @@
    <mvcreate name="dfac_db"
              database="{g.dfac_dbf}"
 
-             fields="statdate   char(10),
+             fields="statdate   char(25),
                      status     char(5), 
                      fac_id     char(10),
                      call	char(10),
