@@ -85,15 +85,12 @@
                <mvassign name="d.state" value="{l.state}">
                <mvassign name="d.status" value="{l.fac_stat}">
                <mvassign name="d.fac_id" value="{l.fac_id}">
-               <mvif expr="{len(l.statdate) gt 0}">
-                  <mvassign name="d.statdate" value="{l.statdate}">
-               <mvelse>
-                  <mvassign name="d.statdate" value="{l.statdate}">
-               </mvif>
-               <mvassign name="d.calldate" value="{l.callsign_date}">
+               <mvassign name="d.statdate" value="{l.statdate}">
+<mvcomment>
                <mvassign name="d.sortdate" value="{substring(d.statdate, 7, 4) $ 
                                                    substring(d.statdate, 1, 2) $ 
                                                    substring(d.statdate, 4, 2)}">
+</mvcomment>
                <mvadd>
       </mvimport>
    </mvif>
