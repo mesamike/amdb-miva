@@ -9,7 +9,7 @@
 <mvassign name="dfac_call_idx" value="{basedir $ '/dfac_call.idx'}">
 <mvassign name="dfac_qth_idx" value="{basedir $ '/dfac_qth.idx'}">
 <mvassign name="dfac_facid_idx" value="{basedir $ '/dfac_facid.idx'}">
-<mvassign name="dfac_date_idx" value="{basedir $ '/dfac_date.idx'}">
+<mvassign name="dfac_sdate_idx" value="{basedir $ '/dfac_sdate.idx'}">
 <mvassign name="dfac_dat" value="{basedir $ '/dfac.dat'}">
 <mvassign name="dfac_update" value="{basedir $ '/update.txt'}">
 
