@@ -85,7 +85,7 @@
                <mvassign name="d.state" value="{l.state}">
                <mvassign name="d.status" value="{l.fac_stat}">
                <mvassign name="d.fac_id" value="{l.fac_id}">
-               <mvassign name="d.sdate" value="{l.sdate}">
+               <mvassign name="d.sdate" value="{substring(l.sdate,1,10)}">
 <mvcomment>
                <mvassign name="d.sortdate" value="{substring(d.date, 7, 4) $ 
                                                    substring(d.date, 1, 2) $ 
