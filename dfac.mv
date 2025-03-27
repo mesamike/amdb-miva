@@ -57,7 +57,7 @@
    <mvmakeindex name="dfac_db"
                 indexfile="{g.dfac_statdate_idx}"
                 flags="descending"
-                expr="{dfac_db.d.sortdate}"> 
+                expr="{dfac_db.d.call_date}"> 
 
    <mvif expr="{not fexists(dfac_dat)}">
       <mveval expr="{'Data file '$dfac_dat$' missing.<br>'}">
