@@ -9,7 +9,7 @@
 <mvassign name="dfac_call_idx" value="{basedir $ '/dfac_call.idx'}">
 <mvassign name="dfac_qth_idx" value="{basedir $ '/dfac_qth.idx'}">
 <mvassign name="dfac_facid_idx" value="{basedir $ '/dfac_facid.idx'}">
-<mvassign name="dfac_statdate_idx" value="{basedir $ '/dfac_statdate.idx'}">
+<mvassign name="dfac_date_idx" value="{basedir $ '/dfac_date.idx'}">
 <mvassign name="dfac_dat" value="{basedir $ '/dfac.dat'}">
 <mvassign name="dfac_update" value="{basedir $ '/update.txt'}">
 
@@ -31,7 +31,7 @@
    <mvcreate name="dfac_db"
              database="{g.dfac_dbf}"
 
-             fields="statdate   char(25),
+             fields="date   char(25),
                      status     char(5), 
                      fac_id     char(10),
                      call	char(10),
@@ -55,9 +55,9 @@
                 flags="ascending"
                 expr="{dfac_db.d.state$'_'$dfac_db.d.city$'_'$dfac.d.freq}"> 
    <mvmakeindex name="dfac_db"
-                indexfile="{g.dfac_statdate_idx}"
+                indexfile="{g.dfac_date_idx}"
                 flags="descending"
-                expr="{dfac_db.d.statdate}"> 
+                expr="{dfac_db.d.date}"> 
 
    <mvif expr="{not fexists(dfac_dat)}">
       <mveval expr="{'Data file '$dfac_dat$' missing.<br>'}">
@@ -65,7 +65,7 @@
    <mvelse>
       <mvimport file="{dfac_dat}"
                 fields="
-                        l.statdate,
+                        l.date,
                         l.fac_stat,
                         l.fac_id,
                         l.callsign,
@@ -85,11 +85,11 @@
                <mvassign name="d.state" value="{l.state}">
                <mvassign name="d.status" value="{l.fac_stat}">
                <mvassign name="d.fac_id" value="{l.fac_id}">
-               <mvassign name="d.statdate" value="{l.statdate}">
+               <mvassign name="d.date" value="{l.date}">
 <mvcomment>
-               <mvassign name="d.sortdate" value="{substring(d.statdate, 7, 4) $ 
-                                                   substring(d.statdate, 1, 2) $ 
-                                                   substring(d.statdate, 4, 2)}">
+               <mvassign name="d.sortdate" value="{substring(d.date, 7, 4) $ 
+                                                   substring(d.date, 1, 2) $ 
+                                                   substring(d.date, 4, 2)}">
 </mvcomment>
                <mvadd>
       </mvimport>
@@ -106,7 +106,7 @@
 <mvelse><mvif expr="{sortby eq 'facid'}">
       <mvassign name="idx_file" value="{dfac_facid_idx}">
 <mvelse>
-      <mvassign name="idx_file" value="{dfac_statdate_idx}">
+      <mvassign name="idx_file" value="{dfac_date_idx}">
 </mvif></mvif></mvif></mvif>
 
 <mvimport file="{dfac_update}"
@@ -205,14 +205,13 @@ Both</td></tr>
 <mvwhile expr="{not d.eof}">
 <mvif expr="{(d.status eq g.show) OR (g.show eq 'both')}">
    <tr>
-      <td><mveval expr="{d.statdate}"></td>
+      <td><mveval expr="{d.date}"></td>
       <td><mveval expr="{d.status}"></td>
       <td><a href="{'https://enterpriseefiling.fcc.gov/dataentry/public/tv/publicFacilityDetails.html?facilityId='$d.fac_id}" target="_blank" ><mveval expr="{d.fac_id}"></a></td>
       <td><mveval expr="{d.call}"></td>
       <td align="right"><mveval expr="{d.freq}"></td>
       <td align="center"><mveval expr="{d.state}"></td>
       <td><mveval expr="{d.city}"></td>
-      <td><mveval expr="{d.callhist}"></td>
    </tr>
    <mvassign name="rec_count" value="{rec_count +1}">
 </mvif>
