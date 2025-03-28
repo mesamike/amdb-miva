@@ -73,7 +73,7 @@
    <mvassign name="dummy" value="{fdelete(dfac_freq_idx)}">
    <mvassign name="dummy" value="{fdelete(fac_qth_idx)}">
    <mvassign name="dummy" value="{fdelete(dfac_facid_idx)}">
-   <mvassign name="dummy" value="{fdelete(dfac_statdate_idx)}">
+   <mvassign name="dummy" value="{fdelete(dfac_sdate_idx)}">
    <mvassign name="dummy" value="{fdelete(amdb_rebuild)}">
 </mvif>
     
