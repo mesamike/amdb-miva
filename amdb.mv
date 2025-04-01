@@ -313,7 +313,7 @@ function saveVals(e1,e2,e3,e4,e5,e6) {
    <hr/>
    Recent improvements:<br>
    <code>
-   eb>2025-04-01:</b> Implemented previous callsign history<br/>
+   <b>2025-04-01:</b> Implemented previous callsign history<br/>
    <b>2025-03-25:</b> Initial re-release. Callsign history still to be implemented<br/>
    </code>
 <p>Comments/suggestions? <a href="mailto:mike@mesamike.org?subject=Mesa Mike's AMDB List">email me</a>
