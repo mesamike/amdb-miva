@@ -319,7 +319,8 @@ function saveVals(e1,e2,e3,e4,e5,e6) {
 <p>Comments/suggestions? <a href="mailto:mike@mesamike.org?subject=Mesa Mike's AMDB List">email me</a>
    <hr>
 <table>
-   <tr><td colspan="3">Enter your home coordinates in degrees: (<b>example</b>: Latitude = 37.0902, Longitude = -95.7219)</td></tr>
+   <tr><td colspan="3">Enter your home coordinates in degrees: (<b>example</b>: Latitude = 37.0902, Longitude = -95.7219)</td>
+   <td>Lacopo Giangrandi has [<a href="https://www.giangrandi.org/electronics/radio/qthloccalc.shtml">a handy tool</a>] you can use for converting your QTH to decimal degreesi</td></tr>
    <form action="amdb.mvc" method="POST">
    <input type="hidden" name="f_calc" value="calc">
    <mvhide fields="f_freq,f_sortby,f_state">
