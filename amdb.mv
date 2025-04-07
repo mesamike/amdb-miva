@@ -323,7 +323,7 @@ function saveVals(e1,e2,e3,e4,e5,e6) {
    <form action="amdb.mvc" method="POST">
    <input type="hidden" name="f_calc" value="calc">
    <mvhide fields="f_freq,f_sortby,f_state">
-   <tr><td>Latitude:</td><td><input name="f_lat" type="text" value="{f_lat}" onfocus="getValue(this)"></td><td>Lacopo Giangrandi has [<a href="https://www.giangrandi.org/electronics/radio/qthloccalc.shtml">a handy tool</a>] you can use for converting your QTH to decimal degrees</td></tr>
+   <tr><td>Latitude:</td><td><input name="f_lat" type="text" value="{f_lat}" onfocus="getValue(this)"></td><td>Lacopo Giangrandi has [<a href="https://www.giangrandi.org/electronics/radio/qthloccalc.shtml" target="blank">a handy tool</a>] you can use for converting your QTH to decimal degrees</td></tr>
    <tr><td>Longitude:</td><td><input name="f_lon" type="text" value="{f_lon}" onfocus="getValue(this)"></td>
    <td><input type="submit" value="Calculate Distance and Bearing" onclick="saveVals(f_lat, f_lon)"></td></tr>
    </form>
