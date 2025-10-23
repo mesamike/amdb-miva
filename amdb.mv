@@ -14,7 +14,7 @@
 <mvassign name="amdb_update" value="{basedir $ '/update.txt'}">
 <mvassign name="amdb_hitcount" value="{basedir $ '/hitcount.txt'}">
 <mvassign name="amdb_rebuild" value="{basedir $ '/rebuild'}">
-
+<mvassign name="issue_file" value="{basedir $ '/issue'}">
 
 <mvassign name="dfac_dbf" value="{basedir $ '/dfac.dbf'}">
 <mvassign name="dfac_dbt" value="{basedir $ '/dfac.dbt'}">
@@ -22,7 +22,7 @@
 <mvassign name="dfac_freq_idx" value="{basedir $ '/dfac_freq.idx'}">
 <mvassign name="dfac_qth_idx" value="{basedir $ '/dfac_qth.idx'}">
 <mvassign name="dfac_statdate_idx" value="{basedir $ '/dfac_statdate.idx'}">
-
+<mvassign name="g.issue_text" value="''">
 
 <mvassign name="freqlist" value ="540,550,560,567,570,580,590">
 <mvassign name="freqlist" value ="{freqlist$',600,610,620,630,640,650,660,670,680,690'}">
@@ -204,6 +204,10 @@
    <mvassign name="f_freq" value="">
 </mvif>
 
+<mvif expr="fexists(issue_file)">
+   <mvassign name="g.issue_text" value="file_read(issue_file, 'data', g.issue_text)">
+</mvif>
+
 <miva standardoutputlevel="text,html">
 
 <mvopen name="{amdb_db}" database="{amdb_dbf}" indexes="{idx_file}">
@@ -308,6 +312,7 @@ function saveVals(e1,e2,e3,e4,e5,e6) {
    Critical Hours are sunrise till 2 hours after sunrise, and 2 hours before sunset till sunset<br>
    Also see [<a href="http://mesamike.org/radio/amdb/dfac.mvc"> list of deleted stations</a>]<br/>
    <hr/>
+   <mveval expr="{g.issue_text}">
    <b>NOTE:</b> The list is now generated from the FCC's new LMS database files <br/>
 <font color="red">Please report any weirdness</font>
    <hr/>
