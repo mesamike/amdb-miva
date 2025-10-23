@@ -205,7 +205,7 @@
 </mvif>
 
 <mvif expr="{fexists(issue_file)}">
-   <mvassign name="g.issue_text" value="{file_read(issue_file, 'data', g.issue_text)}">
+   <mvassign name="g.issue_length" value="{file_read(issue_file, 'data', g.issue_text)}">
 </mvif>
 
 <miva standardoutputlevel="text,html">
